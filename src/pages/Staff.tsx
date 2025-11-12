@@ -8,7 +8,7 @@ import headmaster from "@/assets/headmaster.jpg";
 const Staff = () => {
   const leadership = [
     {
-      name: "Dr. Michael Anderson",
+      name: "Dr. Amoah Godfred",
       position: "Headmaster",
       email: "m.anderson@ellenwhitecomplex.edu",
       image: headmaster,
