@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import schoolLogo from "@/assets/school-logo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,6 @@ const Navigation = () => {
     { path: "/about", label: "About" },
     { path: "/academics", label: "Academics" },
     { path: "/staff", label: "Staff" },
-    { path: "/gallery", label: "Gallery" },
     { path: "/contact", label: "Contact" },
   ];
 
@@ -23,15 +23,19 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo and School Name */}
-          <Link to="/" className="flex items-center gap-3 group">
-            <div className="bg-accent p-2 rounded-lg transition-transform group-hover:scale-110">
-              <GraduationCap className="h-8 w-8 text-primary" />
-            </div>
+          <Link to="/" className="flex items-center gap-3 group flex-shrink-0">
+            <img
+              src={schoolLogo}
+              alt="Ellen White Educational Complex Logo"
+              className="h-10 w-10 md:h-12 md:w-12 object-contain" // Responsive sizes
+            />
             <div className="hidden md:block">
-              <h1 className="text-primary-foreground font-bold text-xl leading-tight">
+              <h1 className="text-primary-foreground font-bold text-xl leading-tight transition-all group-hover:text-accent">
                 Ellen White
               </h1>
-              <p className="text-primary-foreground/80 text-xs font-light">Educational Complex</p>
+              <p className="text-primary-foreground/80 text-xs font-light">
+                Educational Complex
+              </p>
             </div>
           </Link>
 
@@ -50,9 +54,6 @@ const Navigation = () => {
                 {link.label}
               </Link>
             ))}
-            <Button variant="default" className="ml-4 bg-accent text-accent-foreground hover:bg-accent/90">
-              Enroll Now
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -83,8 +84,8 @@ const Navigation = () => {
                   {link.label}
                 </Link>
               ))}
-              <Button 
-                variant="default" 
+              <Button
+                variant="default"
                 className="mt-2 bg-accent text-accent-foreground hover:bg-accent/90"
                 onClick={() => setIsOpen(false)}
               >

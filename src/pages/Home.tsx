@@ -22,6 +22,10 @@ import sportsActivities from "@/assets/sports-activities.jpg";
 import campusView from "@/assets/campus-view.jpeg";
 import artClass from "@/assets/art-class.jpeg";
 import scienceLab from "@/assets/science-lab.jpeg";
+import student1 from "@/assets/student1.jpg";
+import student6 from "@/assets/student6.jpg";
+import student7 from "@/assets/student7.jpg";
+import student8 from "@/assets/student8.jpg";
 
 const Home = () => {
   const features = [
@@ -98,8 +102,8 @@ const Home = () => {
   ];
 
   const stats = [
-    { number: "2,000+", label: "Students Enrolled" },
-    { number: "50+", label: "Years of Excellence" },
+    { number: "250+", label: "Students Enrolled" },
+    { number: "15+", label: "Years of Excellence" },
     { number: "98%", label: "Graduation Rate" },
     { number: "15:1", label: "Student-Teacher Ratio" },
   ];
@@ -171,11 +175,11 @@ const Home = () => {
           </div>
 
           {/* Scroll indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
             <div className="w-6 h-10 border-2 border-primary-foreground rounded-full flex justify-center">
               <div className="w-1 h-3 bg-primary-foreground rounded-full mt-2" />
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -303,54 +307,38 @@ const Home = () => {
               <div className="space-y-4">
                 <div className="relative overflow-hidden rounded-2xl shadow-medium group">
                   <img
-                    src={scienceLab}
+                    src={student1}
                     alt="Science laboratory"
                     className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent flex items-end p-4">
-                    <p className="text-primary-foreground font-semibold">
-                      Science Labs
-                    </p>
-                  </div>
+                  
                 </div>
                 <div className="relative overflow-hidden rounded-2xl shadow-medium group">
                   <img
-                    src={artClass}
+                    src={student6}
                     alt="Art classroom"
                     className="w-full h-32 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent flex items-end p-4">
-                    <p className="text-primary-foreground font-semibold">
-                      Art Studio
-                    </p>
-                  </div>
+                  
                 </div>
               </div>
 
               <div className="space-y-4 pt-8">
                 <div className="relative overflow-hidden rounded-2xl shadow-medium group">
                   <img
-                    src={campusView}
+                    src={student7}
                     alt="Campus view"
                     className="w-full h-32 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent flex items-end p-4">
-                    <p className="text-primary-foreground font-semibold">
-                      Campus Grounds
-                    </p>
-                  </div>
+                  
                 </div>
                 <div className="relative overflow-hidden rounded-2xl shadow-medium group">
                   <img
-                    src={sportsActivities}
+                    src={student8}
                     alt="Sports activities"
                     className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent flex items-end p-4">
-                    <p className="text-primary-foreground font-semibold">
-                      Athletics
-                    </p>
-                  </div>
+                  
                 </div>
               </div>
             </div>
