@@ -497,7 +497,7 @@ const Staff = () => {
                 </p>
                 <div className="flex items-center gap-3">
                   <img
-                    src={placeholderImages.mathTeacher}
+                    src={teacher3}
                     alt="Mr. Kwame Osei"
                     className="w-12 h-12 rounded-full object-cover"
                   />
@@ -519,7 +519,7 @@ const Staff = () => {
                 </p>
                 <div className="flex items-center gap-3">
                   <img
-                    src={placeholderImages.scienceTeacher}
+                    src={teacher1}
                     alt="Dr. James Carter"
                     className="w-12 h-12 rounded-full object-cover"
                   />
@@ -541,7 +541,7 @@ const Staff = () => {
                 </p>
                 <div className="flex items-center gap-3">
                   <img
-                    src={placeholderImages.englishTeacher}
+                    src={teacher5}
                     alt="Ms. Evelyn Nkrumah"
                     className="w-12 h-12 rounded-full object-cover"
                   />

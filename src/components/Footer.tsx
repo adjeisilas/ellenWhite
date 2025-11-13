@@ -324,12 +324,6 @@ const Footer = () => {
                 Accessibility
               </Link>
             </div>
-
-            <div className="flex items-center gap-2 text-xs text-primary-foreground/40">
-              <span>Made with</span>
-              <Heart className="h-3 w-3 text-red-400 fill-red-400" />
-              <span>for education</span>
-            </div>
           </div>
         </div>
       </div>
