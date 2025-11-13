@@ -127,13 +127,13 @@ const Footer = () => {
           {/* School Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="bg-accent p-2 sm:p-3 rounded-xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-strong">
+              
     <img 
       src={schoolLogo} 
       alt="Ellen White Educational Complex Logo"
       className="h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 object-contain" // Responsive sizes
     />
-  </div>
+  
               <div>
                 <h3 className="font-bold text-2xl">Ellen White</h3>
                 <p className="text-primary-foreground/80 font-semibold">Educational Complex</p>
