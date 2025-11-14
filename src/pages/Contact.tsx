@@ -512,7 +512,7 @@ const Contact = () => {
       </section>
 
       {/* Interactive Map Section */}
-      <section className="py-20 bg-background">
+      {/* <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
@@ -560,7 +560,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Emergency Contact Banner */}
       <section className="py-12 bg-red-50 border border-red-200">
