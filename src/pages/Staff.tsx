@@ -65,11 +65,11 @@ const Staff = () => {
       email: "g.amoah@ellenwhitecomplex.edu",
       phone: "+233 24 123 4567",
       image: headmaster,
-      bio: "Ph.D. in Educational Leadership with 20 years of experience in secondary education. Passionate about innovative teaching methods and student development.",
+      bio: "Ph.D. in Educational Leadership with 15 years of experience in secondary education. Passionate about innovative teaching methods and student development.",
       qualifications: ["Ph.D. Educational Leadership", "M.Ed. Curriculum Development", "B.Sc. Mathematics"],
-      experience: "20+ years",
+      experience: "15+ years",
       specialty: "Educational Leadership & Administration",
-      achievements: ["National Education Award 2020", "Published 3 Research Papers", "Speaker at International Education Conferences"]
+      achievements: ["National Education Award 2020", "Published 3 Research Papers"]
     },
     {
       name: "Mr. David Baafabu",
@@ -77,9 +77,9 @@ const Staff = () => {
       email: "davidbaafa@gmail.com",
       phone: "+233 24 123 4568",
       image: teacher3,
-      bio: "M.Ed. in Educational Administration with 15 years of teaching experience. Specializes in student affairs and academic planning.",
-      qualifications: ["M.Ed. Educational Administration", "B.A. Education", "PGDE"],
-      experience: "15+ years",
+      bio: "M.Ed. in Educational Administration with 8 years of teaching experience. Specializes in student affairs and academic planning.",
+      qualifications: ["M.Ed. Educational Administration", "B.A. Education"],
+      experience: "8+ years",
       specialty: "Student Affairs & Academic Planning",
       achievements: ["Excellence in Administration Award", "Student Mentorship Program Founder"]
     }
@@ -87,99 +87,67 @@ const Staff = () => {
 
   const faculty = [
     {
-      name: "Mr. Kwame Osei",
+      name: "Mr. David Baafabu",
       position: "Mathematics Department Head",
-      subject: "Mathematics & Algebra",
-      email: "k.osei@ellenwhitecomplex.edu",
+      subject: "Mathematics",
       phone: "+233 24 123 4569",
-      image: teacher1,
-      qualifications: ["M.Sc. Mathematics", "B.Ed. Mathematics", "Certified Math Educator"],
-      experience: "12 years",
-      specialty: "Advanced Algebra & Calculus",
+      image: teacher3,
       officeHours: "Mon, Wed, Fri - 2:00 PM to 3:30 PM"
     },
     {
-      name: "Dr. James Carter",
+      name: "Miss. Portia Amoah",
       position: "Science Department Head",
-      subject: "Biology & Chemistry",
-      email: "j.carter@ellenwhitecomplex.edu",
+      subject: "General Science",
       phone: "+233 24 123 4570",
       image: teacher2,
-      qualifications: ["Ph.D. Biochemistry", "M.Sc. Biology", "B.Sc. Chemistry"],
-      experience: "10 years",
-      specialty: "Laboratory Sciences & Research",
       officeHours: "Tue, Thu - 2:00 PM to 4:00 PM"
     },
     {
-      name: "Ms. Evelyn Nkrumah",
+      name: "Mr. Amoah Thomas",
       position: "English Language Teacher",
-      subject: "English & Literature",
-      email: "e.nkrumah@ellenwhitecomplex.edu",
+      subject: "English",
       phone: "+233 24 123 4571",
       image: teacher3,
-      qualifications: ["M.A. English Literature", "B.A. English", "TESOL Certified"],
-      experience: "8 years",
-      specialty: "Creative Writing & Literary Analysis",
       officeHours: "Mon, Wed - 3:00 PM to 4:30 PM"
     },
     {
-      name: "Mr. David Thompson",
+      name: "Mr. David Agymang",
       position: "Social Studies Teacher",
-      subject: "History & Geography",
-      email: "d.thompson@ellenwhitecomplex.edu",
+      subject: "History",
       phone: "+233 24 123 4572",
       image: teacher5,
-      qualifications: ["M.A. History", "B.Ed. Social Studies", "Diploma in African Studies"],
-      experience: "9 years",
-      specialty: "African History & Cultural Studies",
       officeHours: "Tue, Thu - 1:30 PM to 3:00 PM"
     },
     {
-      name: "Mrs. Maria Gonzalez",
+      name: "Mr. Jacob Gonzalez",
       position: "French Language Teacher",
-      subject: "French & Spanish",
-      email: "m.gonzalez@ellenwhitecomplex.edu",
+      subject: "French",
       phone: "+233 24 123 4573",
       image: teacher6,
-      qualifications: ["M.A. French Literature", "DELF Certified", "B.A. Modern Languages"],
-      experience: "7 years",
-      specialty: "French Language & Culture",
       officeHours: "Mon, Fri - 2:30 PM to 4:00 PM"
     },
     {
-      name: "Mr. Robert Chen",
+      name: "Mr. Adjei Silas",
       position: "ICT Coordinator",
       subject: "Computer Science & IT",
-      email: "r.chen@ellenwhitecomplex.edu",
       phone: "+233 24 123 4574",
       image: teacher7,
-      qualifications: ["M.Sc. Computer Science", "B.Sc. IT", "Microsoft Certified"],
-      experience: "6 years",
-      specialty: "Programming & Digital Literacy",
       officeHours: "Wed, Thu - 3:00 PM to 5:00 PM"
     },
     {
-      name: "Ms. Jennifer Lee",
+      name: "Mr. Adu Gyamfi Kingsley",
       position: "Physical Education",
-      subject: "PE & Health Education",
-      email: "j.lee@ellenwhitecomplex.edu",
+      subject: "PE",
       phone: "+233 24 123 4575",
       image: teacher8,
-      qualifications: ["M.Sc. Sports Science", "B.Ed. Physical Education", "First Aid Certified"],
-      experience: "8 years",
-      specialty: "Sports Training & Fitness",
       officeHours: "Daily - 4:00 PM to 5:00 PM"
     },
     {
-      name: "Mr. Michael Brown",
+      name: "Mr. Michael Oduru",
       position: "Creative Arts Teacher",
-      subject: "Visual & Performing Arts",
-      email: "m.brown@ellenwhitecomplex.edu",
+      subject: "General Arts",
       phone: "+233 24 123 4576",
       image: teacher3,
-      qualifications: ["M.F.A. Visual Arts", "B.A. Fine Arts", "Certified Art Educator"],
-      experience: "11 years",
-      specialty: "Painting & Sculpture",
       officeHours: "Tue, Thu - 2:00 PM to 4:00 PM"
     }
   ];
@@ -196,33 +164,24 @@ const Staff = () => {
       office: "Counseling Office, Room 101"
     },
     {
-      name: "Ms. Patricia Wilson",
+      name: "Ms. Patricia Adams",
       position: "Head Librarian",
-      email: "p.wilson@ellenwhitecomplex.edu",
       phone: "+233 24 123 4578",
       image: teacher8,
-      qualifications: ["M.L.I.S.", "B.A. Library Science", "Digital Resources Certified"],
-      specialty: "Research & Information Literacy",
       office: "Main Library, 2nd Floor"
     },
     {
-      name: "Mr. Thomas Davis",
+      name: "Mr. Thomas Boakye",
       position: "Administrative Coordinator",
-      email: "t.davis@ellenwhitecomplex.edu",
       phone: "+233 24 123 4579",
       image: teacher7,
-      qualifications: ["B.A. Administration", "Office Management Certified"],
-      specialty: "School Administration & Operations",
       office: "Administration Building, Room 201"
     },
     {
       name: "Mrs. Amanda Martinez",
       position: "School Nurse",
-      email: "a.martinez@ellenwhitecomplex.edu",
       phone: "+233 24 123 4580",
       image: teacher6,
-      qualifications: ["R.N. Registered Nurse", "B.Sc. Nursing", "First Aid Instructor"],
-      specialty: "Student Health & Wellness",
       office: "Health Center, Ground Floor"
     }
   ];
@@ -384,9 +343,6 @@ const Staff = () => {
                       alt={teacher.name}
                       className="w-32 h-32 rounded-2xl object-cover shadow-medium mx-auto group-hover:scale-105 transition-transform duration-300"
                     />
-                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-accent text-accent-foreground text-xs font-semibold px-3 py-1 rounded-full">
-                      {teacher.experience}
-                    </div>
                   </div>
                   
                   <h3 className="text-lg font-bold mb-1 text-foreground">{teacher.name}</h3>
@@ -402,13 +358,7 @@ const Staff = () => {
                   </div>
                   
                   <div className="flex justify-center space-x-3">
-                    <a
-                      href={`mailto:${teacher.email}`}
-                      className="p-2 bg-accent/10 rounded-lg hover:bg-accent/20 transition-colors"
-                      title="Send Email"
-                    >
-                      <Mail className="h-4 w-4 text-accent" />
-                    </a>
+                    
                     <a
                       href={`tel:${teacher.phone}`}
                       className="p-2 bg-accent/10 rounded-lg hover:bg-accent/20 transition-colors"
@@ -448,17 +398,10 @@ const Staff = () => {
                   
                   <h3 className="text-lg font-bold mb-1 text-foreground">{staff.name}</h3>
                   <p className="text-accent font-semibold text-sm mb-2">{staff.position}</p>
-                  <p className="text-muted-foreground text-xs mb-3">{staff.specialty}</p>
                   <p className="text-xs text-primary font-medium mb-4">{staff.office}</p>
                   
                   <div className="flex justify-center space-x-3">
-                    <a
-                      href={`mailto:${staff.email}`}
-                      className="p-2 bg-accent/10 rounded-lg hover:bg-accent/20 transition-colors"
-                      title="Send Email"
-                    >
-                      <Mail className="h-4 w-4 text-accent" />
-                    </a>
+                    
                     <a
                       href={`tel:${staff.phone}`}
                       className="p-2 bg-accent/10 rounded-lg hover:bg-accent/20 transition-colors"

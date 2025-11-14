@@ -72,8 +72,8 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Visit Our Campus",
-      details: ["123 Education Avenue", "Learning District, Accra", "Ghana, GA 12345"],
-      description: "Located in the heart of the educational district",
+      details: ["Ntensere", "Off Sunyani road, Accra", "Ghana"],
+      description: "Located in the boarding area of SOkwai",
       action: "Get Directions",
       link: "https://maps.google.com"
     },
@@ -96,7 +96,7 @@ const Contact = () => {
     {
       icon: Clock,
       title: "Office Hours",
-      details: ["Monday - Friday: 7:00 AM - 4:00 PM", "Saturday: 8:00 AM - 12:00 PM", "Sunday: Closed"],
+      details: ["Monday - Friday: 7:00 AM - 4:00 PM", "Saturday: Closed", "Sunday: Closed"],
       description: "Administrative office hours",
       action: "View Calendar",
       link: "/calendar"
@@ -306,7 +306,7 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                         className="mt-2"
-                        placeholder="John Doe"
+                        placeholder="Adjei Silas"
                       />
                     </div>
                     <div>
@@ -321,7 +321,7 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                         className="mt-2"
-                        placeholder="john@example.com"
+                        placeholder="adjei@example.com"
                       />
                     </div>
                   </div>

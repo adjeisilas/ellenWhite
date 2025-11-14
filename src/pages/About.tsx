@@ -33,8 +33,8 @@ const About = () => {
   const classroomImg = "https://images.unsplash.com/photo-1588072432836-e10032774350?w=600&h=400&fit=crop";
 
   const milestones = [
-    { year: "2005", event: "School Founded", description: "Started with 50 students and 5 teachers" },
-    { year: "2010", event: "First Graduating Class", description: "Celebrated our first batch of graduates" },
+    { year: "2010", event: "School Founded", description: "Started with 50 students and 5 teachers" },
+    { year: "2015", event: "First Graduating Class", description: "Celebrated our first batch of graduates" },
     { year: "2015", event: "New Campus Built", description: "Expanded to modern facilities" },
     { year: "2020", event: "Digital Learning", description: "Implemented comprehensive e-learning" },
     { year: "2024", event: "Excellence Award", description: "Ranked #1 in academic performance" },

@@ -48,7 +48,7 @@ const Home = () => {
       title: "Extracurricular Activities",
       description:
         "Wide range of sports, arts, and clubs to develop well-rounded students.",
-      stats: "20+ Clubs",
+      stats: "10+ Clubs",
     },
     {
       icon: Heart,
@@ -61,22 +61,22 @@ const Home = () => {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
+      name: "Sarah Akoto",
       role: "Parent",
       content:
         "The transformation in my child's confidence and academic performance has been remarkable since joining Ellen White.",
       rating: 5,
     },
     {
-      name: "Dr. Michael Chen",
+      name: "Mr. Gabriel Afriyie",
       role: "Alumni",
       content:
         "The foundation I received here prepared me perfectly for university and my medical career.",
       rating: 5,
     },
     {
-      name: "Priya Patel",
-      role: "Student Council President",
+      name: "Agyapong Kofi",
+      role: "PTA President",
       content:
         "The teachers genuinely care about our success and the community feels like family.",
       rating: 5,
