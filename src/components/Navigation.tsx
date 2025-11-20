@@ -84,13 +84,13 @@ const Navigation = () => {
                   {link.label}
                 </Link>
               ))}
-              <Button
+              {/* <Button
                 variant="default"
                 className="mt-2 bg-accent text-accent-foreground hover:bg-accent/90"
                 onClick={() => setIsOpen(false)}
               >
                 Enroll Now
-              </Button>
+              </Button> */}
             </div>
           </div>
         )}

@@ -68,17 +68,10 @@ const Academics = () => {
       gradeLevels: ["JHS 1-3"]
     },
     {
-      icon: Languages,
-      title: "French Language",
-      description: "Comprehensive French language program to develop multilingual communication skills.",
-      skills: ["Conversational French", "Grammar", "Reading Comprehension", "Cultural Understanding"],
-      gradeLevels: ["JHS 1-3"]
-    },
-    {
       icon: Monitor,
       title: "ICT & Computing",
-      description: "Computer science, coding, digital literacy, and innovative technology integration.",
-      skills: ["Programming", "Digital Literacy", "Cybersecurity", "Creative Design"],
+      description: "Computer literacy, and innovative technology integration.",
+      skills: ["Programming", "Digital Literacy", "Creative Design"],
       gradeLevels: ["JHS 1-3"]
     },
     {
@@ -99,7 +92,7 @@ const Academics = () => {
       icon: Dumbbell,
       title: "Physical Education",
       description: "Promoting physical fitness, sportsmanship, and healthy lifestyle habits.",
-      skills: ["Team Sports", "Fitness Training", "Health Education", "Sportsmanship"],
+      skills: ["Team Sports", "Fitness Training", "Health Education"],
       gradeLevels: ["JHS 1-3"]
     }
   ];
@@ -108,28 +101,28 @@ const Academics = () => {
     {
       icon: Dumbbell,
       title: "Sports & Athletics",
-      activities: ["Basketball", "Soccer", "Volleyball", "Track & Field", "Swimming", "Table Tennis"],
+      activities: ["Basketball", "Soccer", "Volleyball"],
       description: "Competitive and recreational sports programs",
-      schedule: "Mon, Wed, Fri - 3:00 PM"
+      schedule: "Wed, Fri - 3:00 PM"
     },
     {
       icon: Music2,
       title: "Music & Performing Arts",
-      activities: ["School Band", "Choir", "Drama Club", "Visual Arts", "Dance", "Orchestra"],
+      activities: ["School Band", "Choir", "Drama Club", "Visual Arts", "Dance"],
       description: "Creative expression through various art forms",
       schedule: "Tue, Thu - 3:00 PM"
     },
     {
       icon: Target,
       title: "Academic Clubs",
-      activities: ["Science Club", "Math Olympiad", "Debate Team", "Chess Club", "Robotics", "Quiz Club"],
+      activities: ["Science Club", "Math Olympiad", "Debate Team"],
       description: "Enhancing academic skills beyond the classroom",
       schedule: "Mon, Wed - 4:00 PM"
     },
     {
       icon: Users,
       title: "Leadership & Service",
-      activities: ["Student Council", "Peer Tutoring", "Environmental Club", "Community Outreach", "Red Cross"],
+      activities: ["Student Council", "Peer Tutoring",],
       description: "Developing leadership and community engagement",
       schedule: "Fri - 3:30 PM"
     },
@@ -201,9 +194,9 @@ const Academics = () => {
 
   const academicAchievements = [
     { year: "2023", achievement: "98% BECE Pass Rate", description: "National average: 85%" },
-    { year: "2023", achievement: "5 National Science Fair Awards", description: "1st place in Robotics" },
-    { year: "2022", achievement: "Best School in Mathematics", description: "Regional competition" },
-    { year: "2022", achievement: "100% University Placement", description: "All graduates placed" },
+    // { year: "2023", achievement: "5 National Science Fair Awards", description: "1st place in Robotics" },
+    // { year: "2022", achievement: "Best School in Mathematics", description: "Regional competition" },
+    { year: "2022", achievement: "100% Senior High School Placement", description: "All graduates placed" },
   ];
 
   return (
@@ -226,16 +219,16 @@ const Academics = () => {
               <div className="text-primary-foreground/80">BECE Pass Rate</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">15:1</div>
+              <div className="text-3xl md:text-4xl font-bold mb-2">20:1</div>
               <div className="text-primary-foreground/80">Student-Teacher Ratio</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">20+</div>
+              <div className="text-3xl md:text-4xl font-bold mb-2">5+</div>
               <div className="text-primary-foreground/80">Academic Clubs</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold mb-2">100%</div>
-              <div className="text-primary-foreground/80">University Placement</div>
+              <div className="text-primary-foreground/80">SHS Placement</div>
             </div>
           </div>
         </div>
@@ -330,19 +323,19 @@ const Academics = () => {
             ))}
           </div>
 
-          <div className="text-center mt-12">
+          {/* <div className="text-center mt-12">
             <Button asChild>
               <Link to="/achievements" className="flex items-center gap-2">
                 View All Achievements
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
 
       {/* Facilities Section - Enhanced */}
-      <section className="py-20 bg-background">
+      {/* <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
@@ -382,7 +375,7 @@ const Academics = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Enhanced Extracurricular Activities */}
       <section className="py-20 bg-muted">
@@ -466,14 +459,14 @@ const Academics = () => {
             ))}
           </div>
 
-          <div className="text-center mt-12">
+          {/* <div className="text-center mt-12">
             <Button variant="outline" asChild>
               <a href="/academic-calendar.pdf" className="flex items-center gap-2">
                 <Download className="h-4 w-4" />
                 Download Full Calendar
               </a>
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
 

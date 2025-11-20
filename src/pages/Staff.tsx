@@ -60,27 +60,26 @@ const Staff = () => {
 
   const leadership = [
     {
-      name: "Dr. Godfred Amoah",
-      position: "Headmaster",
+      name: "Mr. Godfred Amoah",
+      position: "Proprietor",
       email: "g.amoah@ellenwhitecomplex.edu",
-      phone: "+233 24 123 4567",
+      phone: "+233 54 113 6868",
       image: headmaster,
-      bio: "Ph.D. in Educational Leadership with 15 years of experience in secondary education. Passionate about innovative teaching methods and student development.",
-      qualifications: ["Ph.D. Educational Leadership", "M.Ed. Curriculum Development", "B.Sc. Mathematics"],
+      bio: "Degree in Education with 15 years of experience in Basic education. Passionate about innovative teaching methods and student development.",
+      qualifications: ["Bachelor of Business Education", "Degree in Education", "B.Sc. Mathematics"],
       experience: "15+ years",
       specialty: "Educational Leadership & Administration",
-      achievements: ["National Education Award 2020", "Published 3 Research Papers"]
     },
     {
       name: "Mr. David Baafabu",
-      position: "Deputy Headmaster",
+      position: "Headmaster",
       email: "davidbaafa@gmail.com",
-      phone: "+233 24 123 4568",
+      phone: "+233 55 071 14302",
       image: teacher3,
-      bio: "M.Ed. in Educational Administration with 8 years of teaching experience. Specializes in student affairs and academic planning.",
-      qualifications: ["M.Ed. Educational Administration", "B.A. Education"],
+      bio: "B.Sc. in Mathematics with 8 years of teaching experience. Specializes in mathematics and academic planning.",
+      qualifications: ["B.Sc. Education"],
       experience: "8+ years",
-      specialty: "Student Affairs & Academic Planning",
+      specialty: "Mathematic & Academic Planning",
       achievements: ["Excellence in Administration Award", "Student Mentorship Program Founder"]
     }
   ];
@@ -187,9 +186,9 @@ const Staff = () => {
   ];
 
   const stats = [
-    { number: "30+", label: "Qualified Staff" },
+    { number: "20+", label: "Qualified Staff" },
     { number: "8+", label: "Years Average Experience" },
-    { number: "95%", label: "Staff Retention Rate" },
+    { number: "80%", label: "Staff Retention Rate" },
     { number: "10+", label: "Advanced Degrees" }
   ];
 
@@ -294,7 +293,7 @@ const Staff = () => {
                           </div>
                         </div>
                         
-                        <div>
+                        {/* <div>
                           <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
                             <Award className="h-4 w-4 text-accent" />
                             Achievements
@@ -307,7 +306,7 @@ const Staff = () => {
                               </li>
                             ))}
                           </ul>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>

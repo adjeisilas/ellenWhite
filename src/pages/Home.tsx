@@ -41,14 +41,14 @@ const Home = () => {
       title: "Experienced Faculty",
       description:
         "Dedicated teachers committed to nurturing each student's potential.",
-      stats: "50+ Teachers",
+      stats: "20+ Teachers",
     },
     {
       icon: Trophy,
       title: "Extracurricular Activities",
       description:
         "Wide range of sports, arts, and clubs to develop well-rounded students.",
-      stats: "10+ Clubs",
+      stats: "5 Clubs",
     },
     {
       icon: Heart,
@@ -61,7 +61,7 @@ const Home = () => {
 
   const testimonials = [
     {
-      name: "Sarah Akoto",
+      name: "Amoah Patience",
       role: "Parent",
       content:
         "The transformation in my child's confidence and academic performance has been remarkable since joining Ellen White.",
@@ -102,10 +102,10 @@ const Home = () => {
   ];
 
   const stats = [
-    { number: "250+", label: "Students Enrolled" },
-    { number: "15+", label: "Years of Excellence" },
+    { number: "400+", label: "Students Enrolled" },
+    { number: "10+", label: "Years of Excellence" },
     { number: "98%", label: "Graduation Rate" },
-    { number: "15:1", label: "Student-Teacher Ratio" },
+    { number: "20:1", label: "Student-Teacher Ratio" },
   ];
 
   const renderStars = (count: number) => {
@@ -122,7 +122,7 @@ const Home = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden mt-20">
         <div
           className="absolute inset-0 bg-cover bg-center bg-fixed"
-          style={{ backgroundImage: `url(${heroSchool})` }}
+          style={{ backgroundImage: `url(${student6})` }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/60" />
 
@@ -151,7 +151,7 @@ const Home = () => {
             Innovative Education
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up animation-delay-400">
+          {/* <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up animation-delay-400">
             <Button
               size="lg"
               className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-strong hover:shadow-stronger text-lg px-8 py-6 rounded-full transition-all duration-300 group"
@@ -172,7 +172,7 @@ const Home = () => {
                 Watch Video Tour
               </Link>
             </Button>
-          </div>
+          </div> */}
 
           {/* Scroll indicator */}
           {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
@@ -390,7 +390,7 @@ const Home = () => {
       </section>
 
       {/* Events Section */}
-      <section className="py-20 bg-muted">
+      {/* <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-end mb-12">
             <div>
@@ -439,7 +439,7 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Final CTA Section */}
       <section className="py-20 bg-gradient-to-r from-primary to-primary/90 text-primary-foreground">

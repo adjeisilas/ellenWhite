@@ -33,41 +33,25 @@ const About = () => {
   const classroomImg = "https://images.unsplash.com/photo-1588072432836-e10032774350?w=600&h=400&fit=crop";
 
   const milestones = [
-    { year: "2010", event: "School Founded", description: "Started with 50 students and 5 teachers" },
-    { year: "2015", event: "First Graduating Class", description: "Celebrated our first batch of graduates" },
+    { year: "2011", event: "School Founded", description: "Started with 50 students and 5 teachers" },
+    { year: "2020", event: "First Graduating Class", description: "Celebrated our first batch of graduates" },
     { year: "2015", event: "New Campus Built", description: "Expanded to modern facilities" },
-    { year: "2020", event: "Digital Learning", description: "Implemented comprehensive e-learning" },
-    { year: "2024", event: "Excellence Award", description: "Ranked #1 in academic performance" },
   ];
 
   const leadershipTeam = [
     {
-      name: "Dr. Godfred Amoah",
-      role: "Headmaster",
-      qualification: "PhD in Educational Leadership",
+      name: "Mr. Godfred Amoah",
+      role: "Proprietor",
+      qualification: "Bachelor of Business Education",
       experience: "15+ years",
       specialty: "Curriculum Development"
     },
     {
-      name: "Mrs. Angela Mensah",
-      role: "Deputy Headmaster",
-      qualification: "M.Ed in Administration",
-      experience: "12+ years",
-      specialty: "Student Affairs"
-    },
-    {
-      name: "Mr. Kwame Osei",
-      role: "Academic Director",
-      qualification: "M.Sc in Mathematics",
-      experience: "10+ years",
-      specialty: "STEM Education"
-    },
-    {
-      name: "Ms. Evelyn Nkrumah",
-      role: "Guidance Counselor",
-      qualification: "MA in Psychology",
+      name: "Mr. Baafabu David",
+      role: "Headmaster",
+      qualification: "Bsc in Mathematics",
       experience: "8+ years",
-      specialty: "Student Counseling"
+      specialty: "Student Affairs"
     }
   ];
 
@@ -107,7 +91,7 @@ const About = () => {
     },
     {
       name: "Dr. Ama Serwaa",
-      role: "Alumni (Class of 2015)",
+      role: "Alumni (Class of 2020)",
       content: "The foundation I received here prepared me perfectly for medical school. The teachers were incredibly supportive and dedicated.",
       rating: 5
     },
@@ -141,15 +125,15 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">500+</div>
+              <div className="text-3xl md:text-4xl font-bold mb-2">400+</div>
               <div className="text-primary-foreground/80">Students</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">50+</div>
+              <div className="text-3xl md:text-4xl font-bold mb-2">20+</div>
               <div className="text-primary-foreground/80">Teachers</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">19</div>
+              <div className="text-3xl md:text-4xl font-bold mb-2">10</div>
               <div className="text-primary-foreground/80">Years of Excellence</div>
             </div>
             <div>
@@ -170,14 +154,12 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed text-lg">
                 <p>
-                  Founded in 2005, Ellen White Educational Complex has been a beacon of academic excellence
-                  and character development in our community for nearly two decades. Named after the renowned
-                  educator and visionary Ellen G. White, our school embodies the principles of holistic
+                  Founded in 2011, Ellen White Educational Complex has been a beacon of academic excellence visionary Ellen G. White, our school embodies the principles of holistic
                   education and moral integrity.
                 </p>
                 <p>
-                  What began as a small institution with just 50 students has grown into a thriving educational
-                  community serving over 500 junior high school students. Our growth reflects the trust that
+                  What began as a small institution with just 10 students has grown into a thriving educational
+                  community serving over 400 basic and junior high school students. Our growth reflects the trust that
                   families place in our commitment to providing quality education in a nurturing environment.
                 </p>
                 <p>
@@ -187,7 +169,7 @@ const About = () => {
                 </p>
               </div>
               
-              <div className="mt-8 flex gap-4">
+              {/* <div className="mt-8 flex gap-4">
                 <Button asChild>
                   <Link to="/contact" className="flex items-center gap-2">
                     Visit Our Campus
@@ -197,7 +179,7 @@ const About = () => {
                 <Button variant="outline" asChild>
                   <Link to="/academics">View Academics</Link>
                 </Button>
-              </div>
+              </div> */}
             </div>
             
             {/* Timeline */}
@@ -312,7 +294,7 @@ const About = () => {
       </section>
 
       {/* Facilities Section */}
-      <section className="py-20 bg-background">
+      {/* <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
@@ -342,11 +324,11 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Leadership Team */}
       <section className="py-20 bg-muted">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 flex flex-col items-center justify-center">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
               Meet Our <span className="text-accent">Leadership</span>
@@ -386,13 +368,13 @@ const About = () => {
                 <div className="w-full lg:w-1/3">
                   <img
                     src={headmaster}
-                    alt="Dr. Godfred Amoah, Headmaster"
+                    alt="Dr. Godfred Amoah, Proprietor"
                     className="w-full rounded-2xl shadow-strong"
                   />
                   <div className="mt-4 text-center lg:text-left">
                     <h3 className="text-2xl font-bold text-foreground">Dr. Godfred Amoah</h3>
-                    <p className="text-accent font-semibold">Headmaster</p>
-                    <p className="text-sm text-muted-foreground mt-1">PhD in Educational Leadership</p>
+                    <p className="text-accent font-semibold">Proprietor</p>
+                    <p className="text-sm text-muted-foreground mt-1">Bacheor of Business Eduacation</p>
                   </div>
                 </div>
                 

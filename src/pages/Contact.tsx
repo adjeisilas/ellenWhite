@@ -425,7 +425,7 @@ const Contact = () => {
             {/* Enhanced Sidebar with Additional Information */}
             <div className="space-y-8">
               {/* Departments Contact */}
-              <Card className="border-border shadow-strong">
+              {/* <Card className="border-border shadow-strong">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
                     <Users className="h-5 w-5 text-accent" />
@@ -448,7 +448,7 @@ const Contact = () => {
                     ))}
                   </div>
                 </CardContent>
-              </Card>
+              </Card> */}
 
               {/* Visit Options */}
               <Card className="border-border shadow-strong">
@@ -575,7 +575,7 @@ const Contact = () => {
                 href="tel:+233241234569" 
                 className="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors"
               >
-                Emergency: +233 24 123 4569
+                Emergency: +233 54 113 6868
               </a>
               <p className="text-sm text-red-600">
                 24/7 Emergency Support Available
