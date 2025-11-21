@@ -11,6 +11,7 @@ import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/scroll-to-top";
+import Sitemap from "./components/Sitemap";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
       <ScrollToTop />
+      <Sitemap />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

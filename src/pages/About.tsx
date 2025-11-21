@@ -25,8 +25,16 @@ import headmaster from "@/assets/headmaster.jpg";
 import teachersTeam from "@/assets/teachers-team.jpg";
 import schoolBuilding from "@/assets/school-building.jpg";
 import classroom from "@/assets/classroom.jpg";
+import Seo from "@/components/Seo";
 
 const About = () => {
+
+  <Seo
+        title="About Our School"
+        description="Learn about Ellen White Educational Complex's history, mission, vision, and commitment to academic excellence since 2005. Meet our leadership team and discover our values."
+        keywords="school history, mission vision, educational philosophy, school leadership, core values"
+        canonical="https://ellen-white..vercel.app/about"
+      />
   // Use placeholder images if needed
   const teachersTeamImg = "https://images.unsplash.com/photo-1588072432836-e10032774350?w=600&h=400&fit=crop";
   const schoolBuildingImg = "https://images.unsplash.com/photo-1562774053-701939374585?w=600&h=400&fit=crop";
@@ -338,7 +346,7 @@ const About = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="flex justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {leadershipTeam.map((member, index) => (
               <Card key={index} className="border-border hover:shadow-strong transition-all duration-300 group text-center">
                 <CardContent className="p-6">

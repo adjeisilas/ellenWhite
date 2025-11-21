@@ -26,8 +26,15 @@ import student1 from "@/assets/student1.jpg";
 import student6 from "@/assets/student6.jpg";
 import student7 from "@/assets/student7.jpg";
 import student8 from "@/assets/student8.jpg";
+import Seo from "@/components/Seo";
 
 const Home = () => {
+  <Seo
+        title="Home"
+        description="Ellen White Educational Complex - Empowering Minds, Building Character, Shaping Futures. Premier junior high school in Ghana offering quality education and holistic development."
+        keywords="Ellen White School, Ghana education, junior high school, academic excellence, character development"
+        ogImage="/home-og-image.jpg"
+      />
   const features = [
     {
       icon: BookOpen,
@@ -122,7 +129,7 @@ const Home = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden mt-20">
         <div
           className="absolute inset-0 bg-cover bg-center bg-fixed"
-          style={{ backgroundImage: `url(${student6})` }}
+          style={{ backgroundImage: `url(${student6})` }} 
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/60" />
 

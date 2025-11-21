@@ -32,8 +32,15 @@ import library from "@/assets/library.jpg";
 import scienceLab from "@/assets/science-lab.jpg";
 import computerLab from "@/assets/computer-lab.jpg";
 import student1 from "@/assets/student1.jpg";
+import Seo from "@/components/Seo";
 
 const Academics = () => {
+  <Seo
+        title="Academic Programs"
+        description="Explore our comprehensive academic curriculum, extracurricular activities, and state-of-the-art facilities at Ellen White Educational Complex. JHS 1-3 programs designed for success."
+        keywords="academic curriculum, subjects, extracurricular activities, facilities, JHS program"
+        canonical="https://ellenwhitecomplex.edu/academics"
+      />
   // Use placeholder images if needed
   const scienceLabImg = "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=400&fit=crop";
   const computerLabImg = "https://images.unsplash.com/photo-1581091226825-c6b00e8d1a1f?w=600&h=400&fit=crop";
