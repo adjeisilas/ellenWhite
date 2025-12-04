@@ -139,12 +139,6 @@ const Home = () => {
         </div>
 
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 bg-background/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6 border border-primary-foreground/20">
-            <Award className="h-4 w-4 text-accent" />
-            <span className="text-primary-foreground text-sm font-medium">
-              Ranked #1 in Academic Excellence 2024
-            </span>
-          </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground mb-6 animate-fade-in-up">
             Ellen White
