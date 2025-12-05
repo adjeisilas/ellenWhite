@@ -1,3 +1,4 @@
+// src/main.tsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -43,7 +44,7 @@ const router = createBrowserRouter([
   future: {
     v7_startTransition: true,
     v7_relativeSplatPath: true,
-  },
+  } as any
 });
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

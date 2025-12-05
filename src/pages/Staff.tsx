@@ -6,32 +6,13 @@ import { Button } from "@/components/ui/button";
 import { 
   Mail, 
   Phone, 
-  GraduationCap, 
-  Award, 
+  GraduationCap,
   Clock,
-  BookOpen,
-  Users,
-  Heart,
-  ArrowRight,
   Star,
-  Linkedin,
   Calendar
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import headmaster from "@/assets/headmaster.jpg";
-import deputyHeadmaster from "@/assets/deputy-headmaster.jpg";
-import mathTeacher from "@/assets/math-teacher.jpg";
-import scienceTeacher from "@/assets/science-teacher.jpg";
-import englishTeacher from "@/assets/english-teacher.jpg";
-import socialStudiesTeacher from "@/assets/social-studies-teacher.jpg";
-import frenchTeacher from "@/assets/french-teacher.jpg";
-import ictTeacher from "@/assets/ict-teacher.jpg";
-import peTeacher from "@/assets/pe-teacher.jpg";
-import artsTeacher from "@/assets/arts-teacher.jpg";
-import counselor from "@/assets/counselor.jpg";
-import librarian from "@/assets/librarian.jpg";
-import admin from "@/assets/admin-coordinator.jpg";
-import nurse from "@/assets/school-nurse.jpg";
 import teacher3 from "@/assets/teacher3.jpg";
 import teacher1 from "@/assets/teacher1.jpg";
 import teacher2 from "@/assets/teacher2.jpg";
@@ -39,24 +20,17 @@ import teacher5 from "@/assets/teacher5.jpg";
 import teacher6 from "@/assets/teacher6.jpg";
 import teacher7 from "@/assets/teacher7.jpg";
 import teacher8 from "@/assets/teacher8.jpg";
+import awuahJoseph from "@/assets/awauhJoseph.jpg"
+import evansAwuah from "@/assets/evansAwuah.jpg"
+import kwatemaa from "@/assets/Kwatemaa.jpg"
+import opokuVincent from "@/assets/opokuVincent.jpg"
+import akuShikaGlover from "@/assets/akuShikaGlover.jpg"
 
 const Staff = () => {
   // Use placeholder images if actual images aren't available
   const placeholderImages = {
-    deputyHeadmaster: "teacher3",
-    mathTeacher: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=400&h=400&fit=crop&crop=face",
-    scienceTeacher: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=400&fit=crop&crop=face",
-    englishTeacher: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
-    socialStudiesTeacher: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
-    frenchTeacher: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=400&h=400&fit=crop&crop=face",
-    ictTeacher: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=face",
-    peTeacher: "https://images.unsplash.com/photo-1519452635265-7b1fbfd1e4e0?w=400&h=400&fit=crop&crop=face",
-    artsTeacher: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=400&h=400&fit=crop&crop=face",
-    counselor: "https://images.unsplash.com/photo-1551836026-d5c88ac5c73d?w=400&h=400&fit=crop&crop=face",
-    librarian: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
-    admin: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
-    nurse: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop&crop=face"
-  };
+    deputyHeadmaster: "teacher3"
+  }
 
   const leadership = [
     {
@@ -86,68 +60,57 @@ const Staff = () => {
 
   const faculty = [
     {
-      name: "Mr. David Baafabu",
-      position: "Mathematics Department Head",
-      subject: "Mathematics",
-      phone: "+233 24 123 4569",
-      image: teacher3,
+      name: "Antwi Gifty",
+      position: "English Teacher",
+      subject: "English",
+      phone: "+233 24 731 3916",
+      image: kwatemaa,
       officeHours: "Mon, Wed, Fri - 2:00 PM to 3:30 PM"
     },
     {
-      name: "Miss. Portia Amoah",
-      position: "Science Department Head",
-      subject: "General Science",
-      phone: "+233 24 123 4570",
+      name: "Ms. Amoako Hagar",
+      position: "Asante Twi Teacher",
+      phone: "+233 55 045 2186",
       image: teacher2,
       officeHours: "Tue, Thu - 2:00 PM to 4:00 PM"
     },
     {
-      name: "Mr. Amoah Thomas",
-      position: "English Language Teacher",
-      subject: "English",
-      phone: "+233 24 123 4571",
-      image: teacher3,
+      name: "Mr. Awuah Joseph",
+      position: "Science Teacher",
+      subject: "Integrated Science",
+      phone: "+233 24 116 6275",
+      image: awuahJoseph,
       officeHours: "Mon, Wed - 3:00 PM to 4:30 PM"
     },
     {
-      name: "Mr. David Agymang",
+      name: "Mr. Awuah Evans",
       position: "Social Studies Teacher",
-      subject: "History",
-      phone: "+233 24 123 4572",
-      image: teacher5,
+      subject: "Social Studies",
+      phone: "+233 24 987 7059",
+      image: evansAwuah,
       officeHours: "Tue, Thu - 1:30 PM to 3:00 PM"
     },
     {
-      name: "Mr. Jacob Gonzalez",
-      position: "French Language Teacher",
-      subject: "French",
-      phone: "+233 24 123 4573",
-      image: teacher6,
+      name: "Ms. Ali Hassana",
+      position: "Form Mistress",
+      phone: "+233 55 433 8200",
+      image: teacher1,
       officeHours: "Mon, Fri - 2:30 PM to 4:00 PM"
     },
     {
-      name: "Mr. Adjei Silas",
-      position: "ICT Coordinator",
-      subject: "Computer Science & IT",
-      phone: "+233 24 123 4574",
-      image: teacher7,
+      name: "Mr. Opoku Vincent",
+      position: "RME Teacher",
+      phone: "+233 54 330 1884",
+      image: opokuVincent,
       officeHours: "Wed, Thu - 3:00 PM to 5:00 PM"
     },
     {
-      name: "Mr. Adu Gyamfi Kingsley",
+      name: "Ms. Aku Shika Glover",
       position: "Physical Education",
-      subject: "PE",
-      phone: "+233 24 123 4575",
-      image: teacher8,
+      subject: "Form Mistress",
+      phone: "+233 55 554 2629",
+      image: akuShikaGlover,
       officeHours: "Daily - 4:00 PM to 5:00 PM"
-    },
-    {
-      name: "Mr. Michael Oduru",
-      position: "Creative Arts Teacher",
-      subject: "General Arts",
-      phone: "+233 24 123 4576",
-      image: teacher3,
-      officeHours: "Tue, Thu - 2:00 PM to 4:00 PM"
     }
   ];
 
@@ -374,7 +337,7 @@ const Staff = () => {
       </section>
 
       {/* Support Staff - Enhanced */}
-      <section className="py-20 bg-background">
+      {/* <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
@@ -414,7 +377,7 @@ const Staff = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Staff Testimonials */}
       <section className="py-20 bg-muted">
@@ -440,12 +403,12 @@ const Staff = () => {
                 <div className="flex items-center gap-3">
                   <img
                     src={teacher3}
-                    alt="Mr. Kwame Osei"
+                    alt="Mr. Baafabu David"
                     className="w-12 h-12 rounded-full object-cover"
                   />
                   <div>
-                    <div className="font-semibold text-foreground">Mr. Kwame Osei</div>
-                    <div className="text-sm text-muted-foreground">Mathematics Department Head</div>
+                    <div className="font-semibold text-foreground">Mr. Baafabu David</div>
+                    <div className="text-sm text-muted-foreground">Head Master</div>
                   </div>
                 </div>
               </CardContent>
@@ -462,12 +425,12 @@ const Staff = () => {
                 <div className="flex items-center gap-3">
                   <img
                     src={teacher1}
-                    alt="Dr. James Carter"
+                    alt="Miss. Ali Hassana"
                     className="w-12 h-12 rounded-full object-cover"
                   />
                   <div>
-                    <div className="font-semibold text-foreground">Dr. James Carter</div>
-                    <div className="text-sm text-muted-foreground">Science Department Head</div>
+                    <div className="font-semibold text-foreground">Miss. Ali Hassana</div>
+                    <div className="text-sm text-muted-foreground">Form Mistress</div>
                   </div>
                 </div>
               </CardContent>
@@ -484,12 +447,12 @@ const Staff = () => {
                 <div className="flex items-center gap-3">
                   <img
                     src={teacher5}
-                    alt="Ms. Evelyn Nkrumah"
+                    alt="Mr. Evans Awuah"
                     className="w-12 h-12 rounded-full object-cover"
                   />
                   <div>
-                    <div className="font-semibold text-foreground">Ms. Evelyn Nkrumah</div>
-                    <div className="text-sm text-muted-foreground">English Language Teacher</div>
+                    <div className="font-semibold text-foreground">Mr. Evans Awuah</div>
+                    <div className="text-sm text-muted-foreground">Social Studies Teacher</div>
                   </div>
                 </div>
               </CardContent>

@@ -14,23 +14,16 @@ import {
   Users,
   Award,
   Calendar,
-  Download,
-  ArrowRight,
-  Star,
   Clock,
-  GraduationCap,
   Library,
   Monitor,
   FlaskConical,
   Music2,
   BookText,
-  Languages,
   Target
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import library from "@/assets/library.jpg";
-import scienceLab from "@/assets/science-lab.jpg";
-import computerLab from "@/assets/computer-lab.jpg";
 import student1 from "@/assets/student1.jpg";
 import Seo from "@/components/Seo";
 

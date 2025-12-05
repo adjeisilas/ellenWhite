@@ -7,23 +7,23 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { 
-  MapPin, 
-  Phone, 
-  Mail, 
-  Clock, 
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
   Send,
   Calendar,
   Users,
   BookOpen,
-  ArrowRight,
   MessageCircle,
   CheckCircle,
   School,
-  Car
+  Car,
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Link } from "react-router-dom";
+import Kwatemaa from "@/assets/Kwatemaa.jpg";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -41,27 +41,32 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+
     toast({
       title: "Message Sent Successfully!",
-      description: "Thank you for contacting us. We'll get back to you within 24 hours.",
+      description:
+        "Thank you for contacting us. We'll get back to you within 24 hours.",
     });
-    
-    setFormData({ 
-      name: "", 
-      email: "", 
-      phone: "", 
-      studentGrade: "", 
-      inquiryType: "general", 
-      message: "" 
+
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      studentGrade: "",
+      inquiryType: "general",
+      message: "",
     });
     setIsSubmitting(false);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -75,32 +80,44 @@ const Contact = () => {
       details: ["Ntensere", "Off Sunyani road, Accra", "Ghana"],
       description: "Located in the boarding area of SOkwai",
       action: "Get Directions",
-      link: "https://maps.google.com"
+      link: "https://maps.google.com.gl/VLHmYocmbbvxp7jp7?g_st=iw",
     },
     {
       icon: Phone,
       title: "Call Us",
-      details: ["+233 24 123 4567", "+233 24 123 4568", "Emergency: +233 24 123 4569"],
+      details: [
+        "+233 24 123 4567",
+        "+233 24 123 4568",
+        "Emergency: +233 24 123 4569",
+      ],
       description: "Available during school hours",
       action: "Call Now",
-      link: "tel:+233241234567"
+      link: "tel:+233241234567",
     },
     {
       icon: Mail,
       title: "Email Us",
-      details: ["info@ellenwhitecomplex.edu", "admissions@ellenwhitecomplex.edu", "support@ellenwhitecomplex.edu"],
+      details: [
+        "info@ellenwhitecomplex.edu",
+        "admissions@ellenwhitecomplex.edu",
+        "support@ellenwhitecomplex.edu",
+      ],
       description: "We respond within 24 hours",
       action: "Send Email",
-      link: "mailto:info@ellenwhitecomplex.edu"
+      link: "mailto:info@ellenwhitecomplex.edu",
     },
     {
       icon: Clock,
       title: "Office Hours",
-      details: ["Monday - Friday: 7:00 AM - 4:00 PM", "Saturday: Closed", "Sunday: Closed"],
+      details: [
+        "Monday - Friday: 7:00 AM - 4:00 PM",
+        "Saturday: Closed",
+        "Sunday: Closed",
+      ],
       description: "Administrative office hours",
       action: "View Calendar",
-      link: "/calendar"
-    }
+      link: "/calendar",
+    },
   ];
 
   const departments = [
@@ -108,26 +125,26 @@ const Contact = () => {
       name: "Admissions Office",
       email: "admissions@ellenwhitecomplex.edu",
       phone: "+233 24 123 4570",
-      description: "Enrollment inquiries and applications"
+      description: "Enrollment inquiries and applications",
     },
     {
       name: "Academic Office",
       email: "academics@ellenwhitecomplex.edu",
       phone: "+233 24 123 4571",
-      description: "Curriculum and academic programs"
+      description: "Curriculum and academic programs",
     },
     {
       name: "Student Affairs",
       email: "studentaffairs@ellenwhitecomplex.edu",
       phone: "+233 24 123 4572",
-      description: "Student support and counseling"
+      description: "Student support and counseling",
     },
     {
       name: "Finance Office",
       email: "finance@ellenwhitecomplex.edu",
       phone: "+233 24 123 4573",
-      description: "Tuition and financial matters"
-    }
+      description: "Tuition and financial matters",
+    },
   ];
 
   const visitOptions = [
@@ -136,59 +153,63 @@ const Contact = () => {
       title: "Individual Tour",
       description: "Personalized campus tour for your family",
       duration: "1-2 hours",
-      bestFor: "Prospective students and parents"
+      bestFor: "Prospective students and parents",
     },
     {
       icon: School,
       title: "Open House",
       description: "Group tour with other prospective families",
       duration: "2-3 hours",
-      bestFor: "Multiple families, group visits"
+      bestFor: "Multiple families, group visits",
     },
     {
       icon: BookOpen,
       title: "Classroom Visit",
       description: "Observe classes in session",
       duration: "Half day",
-      bestFor: "Students considering enrollment"
+      bestFor: "Students considering enrollment",
     },
     {
       icon: Car,
       title: "Virtual Tour",
       description: "Online campus experience",
       duration: "45 minutes",
-      bestFor: "International or remote families"
-    }
+      bestFor: "International or remote families",
+    },
   ];
 
   const faqs = [
     {
       question: "What are the school hours?",
-      answer: "School hours are from 7:30 AM to 3:30 PM, Monday through Friday. Office hours are 7:00 AM to 4:00 PM."
+      answer:
+        "School hours are from 7:30 AM to 3:30 PM, Monday through Friday. Office hours are 7:00 AM to 4:00 PM.",
     },
     {
       question: "How do I schedule a campus tour?",
-      answer: "You can schedule a tour by filling out the form on this page, calling our admissions office, or emailing admissions@ellenwhitecomplex.edu."
+      answer:
+        "You can schedule a tour by filling out the form on this page, calling our admissions office, or emailing admissions@ellenwhitecomplex.edu.",
     },
     {
       question: "What documents are required for admission?",
-      answer: "Required documents include birth certificate, previous school records, immunization records, and two passport-sized photographs."
+      answer:
+        "Required documents include birth certificate, previous school records, immunization records, and two passport-sized photographs.",
     },
     {
       question: "Is financial aid available?",
-      answer: "Yes, we offer various scholarship and financial aid programs. Contact our finance office for more information."
-    }
+      answer:
+        "Yes, we offer various scholarship and financial aid programs. Contact our finance office for more information.",
+    },
   ];
 
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />
-      
+
       {/* Enhanced Page Header */}
       <PageHeader
         title="Get In Touch"
         subtitle="We're Here to Help You Discover the Ellen White Experience"
-        backgroundImage="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=1200&h=600&fit=crop"
+        backgroundImage={Kwatemaa}
       />
 
       {/* Quick Contact Bar */}
@@ -197,19 +218,21 @@ const Contact = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-center md:text-left">
               <h3 className="text-lg font-semibold">Ready to Learn More?</h3>
-              <p className="text-primary-foreground/80">Schedule a campus tour today</p>
+              <p className="text-primary-foreground/80">
+                Schedule a campus tour today
+              </p>
             </div>
             <div className="flex gap-3">
-              <Button 
+              {/* <Button 
                 size="lg"
                 className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-strong"
                 asChild
               >
                 <Link to="/tour">Book a Tour</Link>
-              </Button>
-              <Button 
+              </Button> */}
+              <Button
                 size="lg"
-                variant="outline" 
+                variant="outline"
                 className="bg-transparent text-primary-foreground border-2 border-primary-foreground hover:bg-primary-foreground hover:text-primary"
                 asChild
               >
@@ -228,25 +251,26 @@ const Contact = () => {
               Multiple Ways to <span className="text-accent">Connect</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Choose the method that works best for you. We're always here to help.
+              Choose the method that works best for you. We're always here to
+              help.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {contactInfo.map((item, index) => (
-              <Card 
-                key={index} 
+              <Card
+                key={index}
                 className="border-border hover:shadow-strong transition-all duration-500 hover:-translate-y-2 group"
               >
                 <CardContent className="p-6 text-center">
                   <div className="bg-gradient-to-br from-accent/20 to-primary/20 p-4 rounded-2xl w-fit mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <item.icon className="h-8 w-8 text-accent" />
                   </div>
-                  
+
                   <h3 className="text-lg font-bold text-foreground mb-3 group-hover:text-accent transition-colors">
                     {item.title}
                   </h3>
-                  
+
                   <div className="space-y-2 mb-4">
                     {item.details.map((detail, idx) => (
                       <p key={idx} className="text-sm text-muted-foreground">
@@ -254,14 +278,14 @@ const Contact = () => {
                       </p>
                     ))}
                   </div>
-                  
+
                   <p className="text-xs text-primary font-medium mb-4">
                     {item.description}
                   </p>
-                  
-                  <Button 
-                    variant="outline" 
-                    size="sm" 
+
+                  <Button
+                    variant="outline"
+                    size="sm"
                     className="w-full"
                     asChild
                   >
@@ -288,11 +312,12 @@ const Contact = () => {
                       Send Us a Message
                     </h2>
                     <p className="text-muted-foreground mt-1">
-                      Have questions? We're here to help! Fill out the form below.
+                      Have questions? We're here to help! Fill out the form
+                      below.
                     </p>
                   </div>
                 </div>
-                
+
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
@@ -325,7 +350,7 @@ const Contact = () => {
                       />
                     </div>
                   </div>
-                  
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <Label htmlFor="phone" className="text-sm font-semibold">
@@ -342,7 +367,10 @@ const Contact = () => {
                       />
                     </div>
                     <div>
-                      <Label htmlFor="studentGrade" className="text-sm font-semibold">
+                      <Label
+                        htmlFor="studentGrade"
+                        className="text-sm font-semibold"
+                      >
                         Student Grade Level
                       </Label>
                       <select
@@ -360,9 +388,12 @@ const Contact = () => {
                       </select>
                     </div>
                   </div>
-                  
+
                   <div>
-                    <Label htmlFor="inquiryType" className="text-sm font-semibold">
+                    <Label
+                      htmlFor="inquiryType"
+                      className="text-sm font-semibold"
+                    >
                       Inquiry Type
                     </Label>
                     <select
@@ -380,7 +411,7 @@ const Contact = () => {
                       <option value="other">Other</option>
                     </select>
                   </div>
-                  
+
                   <div>
                     <Label htmlFor="message" className="text-sm font-semibold">
                       Message *
@@ -395,7 +426,7 @@ const Contact = () => {
                       placeholder="Tell us how we can help you and any specific questions you might have..."
                     />
                   </div>
-                  
+
                   <Button
                     type="submit"
                     size="lg"
@@ -414,9 +445,11 @@ const Contact = () => {
                       </>
                     )}
                   </Button>
-                  
+
                   <p className="text-xs text-muted-foreground text-center">
-                    By submitting this form, you agree to our privacy policy and consent to being contacted by Ellen White Educational Complex.
+                    By submitting this form, you agree to our privacy policy and
+                    consent to being contacted by Ellen White Educational
+                    Complex.
                   </p>
                 </form>
               </div>
@@ -465,20 +498,28 @@ const Contact = () => {
                             <option.icon className="h-4 w-4 text-accent" />
                           </div>
                           <div className="flex-1">
-                            <h4 className="font-semibold text-foreground text-sm">{option.title}</h4>
-                            <p className="text-xs text-muted-foreground mb-1">{option.description}</p>
+                            <h4 className="font-semibold text-foreground text-sm">
+                              {option.title}
+                            </h4>
+                            <p className="text-xs text-muted-foreground mb-1">
+                              {option.description}
+                            </p>
                             <div className="flex justify-between text-xs">
-                              <span className="text-primary">{option.duration}</span>
-                              <span className="text-muted-foreground">{option.bestFor}</span>
+                              <span className="text-primary">
+                                {option.duration}
+                              </span>
+                              <span className="text-muted-foreground">
+                                {option.bestFor}
+                              </span>
                             </div>
                           </div>
                         </div>
                       </div>
                     ))}
                   </div>
-                  <Button className="w-full mt-4" asChild>
+                  {/* <Button className="w-full mt-4" asChild>
                     <Link to="/tour">Schedule Your Visit</Link>
-                  </Button>
+                  </Button> */}
                 </CardContent>
               </Card>
 
@@ -501,9 +542,9 @@ const Contact = () => {
                       </details>
                     ))}
                   </div>
-                  <Button variant="outline" className="w-full mt-4" asChild>
+                  {/* <Button variant="outline" className="w-full mt-4" asChild>
                     <Link to="/faq">View All FAQs</Link>
-                  </Button>
+                  </Button> */}
                 </CardContent>
               </Card>
             </div>
@@ -566,13 +607,16 @@ const Contact = () => {
       <section className="py-12 bg-red-50 border border-red-200">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
-            <h3 className="text-xl font-bold text-red-800 mb-2">Emergency Contact</h3>
+            <h3 className="text-xl font-bold text-red-800 mb-2">
+              Emergency Contact
+            </h3>
             <p className="text-red-700 mb-4">
-              For urgent matters outside of office hours, please contact our emergency line
+              For urgent matters outside of office hours, please contact our
+              emergency line
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a 
-                href="tel:+233241234569" 
+              <a
+                href="tel:+233241234569"
                 className="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors"
               >
                 Emergency: +233 54 113 6868

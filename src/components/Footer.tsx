@@ -30,26 +30,17 @@ const Footer = () => {
     { name: "Academics", path: "/academics" },
     { name: "Our Staff", path: "/staff" },
     { name: "Admissions", path: "/admissions" },
-    { name: "Gallery", path: "/gallery" },
-    { name: "News & Events", path: "/news" },
   ];
 
   const academicLinks = [
     { name: "Curriculum", path: "/academics/curriculum" },
     { name: "Subjects", path: "/academics/subjects" },
-    { name: "Extracurricular", path: "/academics/extracurricular" },
     { name: "Academic Calendar", path: "/academics/calendar" },
-    { name: "Exam Results", path: "/academics/results" },
-    { name: "Library", path: "/academics/library" },
   ];
 
   const supportLinks = [
     { name: "Contact Us", path: "/contact" },
     { name: "FAQs", path: "/faq" },
-    { name: "Parent Portal", path: "/parents" },
-    { name: "Student Portal", path: "/students" },
-    { name: "Careers", path: "/careers" },
-    { name: "Privacy Policy", path: "/privacy" },
   ];
 
   const socialLinks = [
@@ -95,7 +86,7 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-br from-primary to-primary/90 text-primary-foreground">
       {/* Newsletter Section */}
-      <div className="border-b border-primary-foreground/20">
+      {/* <div className="border-b border-primary-foreground/20">
         <div className="container mx-auto px-4 py-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
@@ -119,7 +110,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-12">
@@ -329,7 +320,7 @@ const Footer = () => {
       </div>
 
       {/* Quick Action Bar */}
-      <div className="bg-primary-foreground/5 border-t border-primary-foreground/10">
+      {/* <div className="bg-primary-foreground/5 border-t border-primary-foreground/10">
         <div className="container mx-auto px-4 py-3">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-3 text-sm">
             <div className="flex items-center gap-4">
@@ -357,7 +348,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </footer>
   );
 };

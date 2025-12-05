@@ -8,23 +8,14 @@ import {
   Eye, 
   Award, 
   Users, 
-  Calendar,
   GraduationCap,
   BookOpen,
   Heart,
-  ArrowRight,
   Quote,
-  MapPin,
-  Phone,
-  Mail,
-  Clock,
   Star
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import headmaster from "@/assets/headmaster.jpg";
-import teachersTeam from "@/assets/teachers-team.jpg";
-import schoolBuilding from "@/assets/school-building.jpg";
-import classroom from "@/assets/classroom.jpg";
 import Seo from "@/components/Seo";
 
 const About = () => {

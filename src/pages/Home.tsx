@@ -6,22 +6,11 @@ import {
   Users,
   Trophy,
   Heart,
-  ArrowRight,
   Star,
-  Calendar,
-  Award,
   GraduationCap,
-  PlayCircle,
 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import heroSchool from "@/assets/hero-school.jpg";
-import studentsLearning from "@/assets/students-learning.jpg";
-import teacherStudents from "@/assets/teacher-students.jpg";
-import sportsActivities from "@/assets/sports-activities.jpg";
-import campusView from "@/assets/campus-view.jpeg";
-import artClass from "@/assets/art-class.jpeg";
-import scienceLab from "@/assets/science-lab.jpeg";
 import student1 from "@/assets/student1.jpg";
 import student6 from "@/assets/student6.jpg";
 import student7 from "@/assets/student7.jpg";
@@ -481,8 +470,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
+        <Footer/>
     </div>
   );
 };

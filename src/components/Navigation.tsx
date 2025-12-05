@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, GraduationCap } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Menu, X} from "lucide-react";
 import schoolLogo from "@/assets/school-logo.png";
 
 const Navigation = () => {
